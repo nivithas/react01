@@ -5,7 +5,7 @@ class Son extends React.Component {
     render() { 
         return ( 
             <div>
-                Am the son
+                Am the son and my name is {this.props.name}
             </div>
          );
     }
