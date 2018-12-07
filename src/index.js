@@ -5,8 +5,10 @@ import App from './App';
 import Parent from './family/parent';
 import Alphabet from './alphabet/alphabet';
 import Counter from './counter/counter';
+import Lifecycle from './lifecycle/lifecycle';
 
 var position = document.getElementById('root');
+var position1 = document.getElementById('life');
 ReactDOM.render(<div>
     <App></App>
     <hr></hr>
@@ -24,4 +26,9 @@ ReactDOM.render(<div>
     <Counter></Counter>
     </div>, 
     position);
-
+    ReactDOM.render(
+        <div>
+            <Lifecycle></Lifecycle>
+        </div>,
+        position1
+    )
