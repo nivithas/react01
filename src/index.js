@@ -6,6 +6,8 @@ import Parent from './family/parent';
 import Alphabet from './alphabet/alphabet';
 import Counter from './counter/counter';
 import Lifecycle from './lifecycle/lifecycle';
+import RemoteAPIData from './remote/apiData';
+import Parentform from './form/parentForm';
 
 var position = document.getElementById('root');
 var position1 = document.getElementById('life');
@@ -24,11 +26,28 @@ ReactDOM.render(<div>
     <Alphabet acolor="pink" bcolor="blue">D</Alphabet>
     <hr></hr>
     <Counter></Counter>
+    <br></br>
     </div>, 
     position);
     ReactDOM.render(
         <div>
             <Lifecycle></Lifecycle>
+            <br></br>
         </div>,
         position1
+    )
+    ReactDOM.render(
+        <div>
+            <RemoteAPIData></RemoteAPIData>
+            <br></br>
+            <br></br>
+        </div>,
+        document.getElementById('remote')
+    )
+
+    ReactDOM.render(
+        <div>
+            <Parentform></Parentform>
+        </div>,
+        document.getElementById('form')
     )
